@@ -1,0 +1,51 @@
+.nav {
+  padding: 20px;
+  font-size: 1em;
+  min-width: 280px;
+  border-right: 1px solid #323232;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.nav ul li {
+  padding: 0.5em 1em;
+}
+
+.nav ul li.active {
+  color: yellow;
+  background-color: rgb(56, 56, 56);
+  border-radius: 4px;
+}
+
+.nav ul ul {
+  margin-left: 1em;
+  margin-top: 0.5em;
+}
+
+
+@media (max-width: 700px) {
+  .nav {
+    display: none;
+  }
+
+  .openCollapsible {
+    display: flex;
+    align-items: flex-start;
+    position: absolute;
+    background-color: #323232;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 68px;
+    z-index: 1;
+  }
+
+  .container p {
+    padding-right: 0;
+  }
+}

@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  padding: 20px;
+  padding-top: 0;
+}
+
+.container main {
+  padding-top: 20px;
+  padding-left: 1em;
+  padding-right: 2em;
+  width: 100%;
+  max-width: 1120px;
+}
+
+.container h1 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.container p {
+  margin: 0.6em 0;
+  padding-right: 4em;
+}
+
+.container p a {
+  color: yellow;
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  .container p {
+    padding-right: 0;
+  }
+}
